@@ -1,0 +1,46 @@
+// Global styles
+
+:root {
+    --color-gray: #1d1e26;
+    --color-black: #15171b;
+    --color-white: #f8f8f2;
+    --color-blurple: #8A96FF;
+    background-color: var(--color-gray);
+}
+
+body {
+    font-family: Ubuntu,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-black);
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a {
+    color: var(--color-white);
+    margin: 0.2rem 0.2rem 0 0;
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 64px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.25rem;
+    row-gap: 1.25rem;
+}
+
+.container {
+    margin: 1.75rem auto;
+    max-width: 85%;
+}
