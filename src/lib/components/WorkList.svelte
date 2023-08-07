@@ -55,10 +55,7 @@
                 duration: 2500,
                 y: "1rem"
             }} class="repo">
-                <picture>
-                    <source class="cover" srcset={getRawCoverURL(repo)} type="image/png" />
-                    <img class="cover" src={Missing} alt="Missing Cover" />
-                </picture>
+                <img class="cover" src={getRawCoverURL(repo)} alt="cover">
                 <p>{getTitle(repo)}</p>
             </div>
         </a>
