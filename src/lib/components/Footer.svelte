@@ -1,8 +1,9 @@
 <script lang="ts">
     import Discord from "$lib/assets/svg/discord.svg";
     import Telegram from "$lib/assets/svg/telegram.svg";
-    import Github from "$lib/assets/svg/github.svg"
-    import Arrow from "$lib/assets/svg/arrow.svg"
+    import Github from "$lib/assets/svg/github.svg";
+    import Arrow from "$lib/assets/svg/arrow.svg";
+    import Gmail from "$lib/assets/svg/gmail.svg";
 	import { _ } from "svelte-i18n";
 
     $: footer = [
@@ -33,6 +34,11 @@
                     icon: Telegram,
                     text: "Telegram",
                     url: "https://telegram.org/"
+                },
+                {
+                    icon: Gmail,
+                    text: "Mail",
+                    url: "mailto:white@waltuh.xyz"
                 }
             ]
         },
