@@ -2,7 +2,6 @@
 	import type { Repository } from "$lib/helpers/ghtypes";
 	import { onMount } from "svelte";
     import { fly } from "svelte/transition";
-    import Missing from "$lib/assets/images/missing.png";
 
     let repos: Array<Repository> = [];
 

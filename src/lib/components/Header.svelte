@@ -13,7 +13,7 @@
 
 <div>
     <img src={Logo} alt="Logo" />
-    <p>Waltuhs</p>
+    <p>Waltuh</p>
     <a href={null} on:click={switchLocales}>{$locale?.toUpperCase()}</a>
 </div>
 
