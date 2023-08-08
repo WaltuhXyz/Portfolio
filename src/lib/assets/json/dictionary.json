@@ -6,9 +6,9 @@
             "title": "Projects and designs"
         },
         "footer": {
-            "design": "Design",
+            "community": "Community",
             "contact-us": "Contact Us",
-            "development": "Development"
+            "development": "Dev and Design"
         }
     },
     "ru": {
@@ -18,9 +18,9 @@
             "title": "Проекты и дизайн"
         },
         "footer": {
-            "design": "Дизайн",
+            "community": "Для Коммьюнити",
             "contact-us": "Обратная Связь",
-            "development": "Разработка"
+            "development": "Разработка и Дизайн"
         }
     }
 }

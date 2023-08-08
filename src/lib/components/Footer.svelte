@@ -8,21 +8,6 @@
 
     $: footer = [
         {
-            title: $_("footer.design"),
-            links: [
-                {
-                    icon: Arrow,
-                    text: "VK",
-                    url: "https://vk.com/rodiio",
-                },
-                {
-                    icon: Arrow,
-                    text: "Telegram",
-                    url: "https://t.me/serhiipll"
-                }
-            ]
-        },
-        {
             title: $_("footer.contact-us"),
             links: [
                 {
@@ -49,9 +34,29 @@
                     icon: Github,
                     text: "GitHub",
                     url: "https://github.com/WaltuhXyz/"
+                },
+                {
+                    icon: Arrow,
+                    text: "VK",
+                    url: "https://vk.com/rodiio",
+                },
+                {
+                    icon: Arrow,
+                    text: "Telegram",
+                    url: "https://t.me/serhiipll"
                 }
             ]
-        }
+        },
+        {
+            title: $_("footer.community"),
+            links: [
+                {
+                    icon: Arrow,
+                    text: "Boosty",
+                    url: "https://boosty.to/waltuhxyz/"
+                }
+            ]
+        },
     ]
 </script>
 
