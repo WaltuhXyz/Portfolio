@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Repository } from "$lib/helpers/ghtypes";
+    import Missing from "$lib/assets/images/missing.png";
 	import { onMount } from "svelte";
     import { fly } from "svelte/transition";
 
@@ -44,6 +45,10 @@
         }
         return `https://github.com/${repo.full_name}`;
     }
+
+    function imgErrorHandler(event: Event, repo: Repository) {
+        (<HTMLImageElement>event.target).src = Missing;
+    }
 </script>
 
 <div class="worklist grid">
@@ -54,7 +59,7 @@
                 duration: 2500,
                 y: "1rem"
             }} class="repo">
-                <img class="cover" src={getRawCoverURL(repo)} alt="cover">
+                <img class="cover" on:error={(event) => imgErrorHandler(event, repo)} src={getRawCoverURL(repo)} alt="cover">
                 <p>{getTitle(repo)}</p>
             </div>
         </a>
