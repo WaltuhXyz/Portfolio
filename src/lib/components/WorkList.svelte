@@ -59,7 +59,8 @@
                 duration: 2500,
                 y: "1rem"
             }} class="repo">
-                <img class="cover" on:error={(event) => imgErrorHandler(event, repo)} src={getRawCoverURL(repo)} alt="cover">
+                <img loading="lazy" class="cover" on:error={(event) => imgErrorHandler(event, repo)}
+                                                                src={getRawCoverURL(repo)} alt="cover">
                 <p>{getTitle(repo)}</p>
             </div>
         </a>
