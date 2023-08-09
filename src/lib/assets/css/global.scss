@@ -37,14 +37,15 @@ h1 {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 1.25rem;
     row-gap: 1.25rem;
-    grid-auto-flow: column dense;
+    grid-auto-flow: column;
 }
 
-@media (max-width: 301px) {
+@media (max-width: 300px) {
     .grid {
+        grid-template-columns: repeat(2, 1fr);
         grid-auto-flow: row dense;
     }
 }
