@@ -116,4 +116,10 @@
         padding-top: 3.62em;
         text-align: center;
     }
+
+    @media (max-width: 480px) {
+        .footer {
+            text-align: center;
+        }
+    }
 </style>

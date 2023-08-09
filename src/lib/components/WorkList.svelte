@@ -77,7 +77,7 @@
 
     .worklist {
         margin-top: 1.94rem;
-        width: 100%;
+        max-width: 100%;
     }
 
     .repo {
