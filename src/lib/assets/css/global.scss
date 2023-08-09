@@ -26,6 +26,8 @@ h1, h2, h3, h4, h5, h6, p, span, a {
     color: var(--color-white);
     margin: 0.2rem 0.2rem 0 0;
     text-decoration: none;
+    word-wrap: break-word;
+    word-break: keep-all;
 }
 
 h1 {
@@ -35,9 +37,16 @@ h1 {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, 1fr);
     column-gap: 1.25rem;
     row-gap: 1.25rem;
+    grid-auto-flow: column dense;
+}
+
+@media (max-width: 301px) {
+    .grid {
+        grid-auto-flow: row dense;
+    }
 }
 
 .container {
